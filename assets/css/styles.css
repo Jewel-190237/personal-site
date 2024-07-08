@@ -255,6 +255,8 @@ img {
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
   transition: 0.3s;
+  margin-top: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .button:hover {
@@ -388,16 +390,15 @@ img {
 /* ===== WORK =====*/
 .work__container {
   row-gap: 2rem;
+  justify-content: center;
 }
 
 
 .work__img {
-  position: relative;
   display: inline-block;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
- 
 }
 
 .work__img img {
@@ -405,14 +406,17 @@ img {
   transition: 1s;
 }
 
-
-
 .work__img img:hover {
   transform: scale(1.1);
 }
 
-.work__img p {
-  position: absolute;
+.button-design{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/* .work__img p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -426,7 +430,7 @@ img {
   border-radius: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   pointer-events: none;
-}
+} */
 
 /* ===== resume =====*/
 .resume-container {
@@ -435,18 +439,29 @@ img {
   padding: 1rem;
   border-radius: 1rem;
 }
+
 .resume-section-title {
   font-size: large;
   font-weight: bold;
   color: blue;
 }
+
+.resume-description {
+  text-align: justify;
+  margin-top: 0.5rem;
+}
+
+.work-station {
+  font-weight: bold;
+}
+
 .work__img {
   position: relative;
   display: inline-block;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
   border-radius: 0.5rem;
   overflow: hidden;
- 
+
 }
 
 .work__img img {
@@ -506,35 +521,18 @@ img {
 
 /* ===== CONTACT =====*/
 .contact-icon {
-  display: flex;
-  justify-content: center;
-  font-size: small;
+  width: 7rem;
+  height: 7rem;
+  margin: auto;
 }
-
-.contact-icon i {
-  font-size: large;
-  margin-right: 1rem;
+.contact-section-title {
+  text-align: center;
   font-weight: bold;
+  color: blue;
+  margin-top: 0.5rem;
 }
-
-.contact__input {
-  width: 100%;
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-semi);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
-  outline: none;
-  margin-bottom: var(--mb-4);
-}
-
-.contact__button {
-  display: block;
-  border: none;
-  outline: none;
-  font-size: var(--normal-font-size);
-  cursor: pointer;
-  margin-left: auto;
+.contact-description {
+  text-align: center;
 }
 
 /* ===== FOOTER =====*/
@@ -614,6 +612,7 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
+    justify-content: center;
   }
 
   .contact__form {
@@ -694,6 +693,7 @@ img {
   .work__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
+    justify-content: center;
   }
 }
 
